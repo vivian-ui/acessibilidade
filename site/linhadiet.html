@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css">
+    <title>Linha Diet</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <label for="toggle-1" class="toggle-menu">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            </label>
+            <input type="checkbox" id="toggle-1">
+        <nav>
+
+            <ul>
+                <li><a href="index.html" title="página inicio">Inicio</a></li>
+                <li><a href="sobrenos.html" title="página sobre nós">Sobre nós</a></li>
+                <li><a href="refrigerantes.html" titles="página dos refrigerantes">Refrigerantes</a></li>
+                <li><a href="linhadiet.html" title="página da linha diet">Linha Diet</a></li>
+                <li><a href="contato.html" title="página de contato">Contato</a></li>
+            </ul>
+
+            <button title="Diminui tamanho da letra"> A- </button>
+            <button title="Tamanho da letra padrão da página"> A </button>
+            <button title="Aumenta o tamanho da letra"> A+ </button>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="background-linhadiet">
+            <div><h2 class="titulo">Linha Diet</h2></div>
+            <div class="titulo-sub"><p>Como todos os produtos da linha Diet Dolly passa por rigorosos <br> controles de qualidade que asseguram o seu delicioso sabor.</p></div>
+            <div class="colunas-linhadiet">
+                <div class="coluna-linhadiet">
+                    <img src="imagens/diet-guaraná.png" alt="Refrigerante Diet Guaraná" title="Diet Guaraná" >
+                    <h3>Guaraná Diet</h3>
+                    <p>Refrigerante produzido com extrato, aromas naturais de guaraná. O primeiro diet do brasileiro tornou-se uma unanimidade ao conquistar paladares mais exigentes.</p>
+                </div>
+                <div class="coluna-linhadiet">
+                    <img src="imagens/diet-limão.png" alt="Refrigerante Diet Limão" title="Diet Limão" >
+                    <h3>Limão Diet</h3>
+                    <p>Refrigerante produzido com  suco concentrado e clarificado de limão, aroma natural de limão e aditivos como conservantes e acidulante. A quantidade de vitamina C no suco de limão varia de 22 a 29mg/100ml.</p>
+                </div>
+                <div class="coluna-linhadiet">
+                    <img src="imagens/diet-maçã.png" alt="Refrigerante Diet Maçã" title="Diet Maçã">
+                    <h3>Maçã Diet</h3>
+                    <p>Refrigerante produzido com suco concentrado e clarificado de maçã e aroma.</p>
+                </div>
+                <div class="coluna-linhadiet">
+                    <img src="imagens/diet-uva.png" alt="Refrigerante Diet Uva" title="Uva" >
+                    <h3>Uva Diet</h3>
+                    <p>Refrigerante produzido com suco concentrado de uva, clarificado.</p>
+                </div>
+                <div class="coluna-linhadiet">
+                    <img src="imagens/diet-cola.png" alt="Refrigerante Diet Cola" titçe="Diet Cola" >
+                    <h3>Cola Diet</h3>
+                    <p>Refrigerante produzido a partir de concentrado natural de cola, com aromas e extrato de noz de cola.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><p> © 2021 - COPYRIGHT - Dolly Guaraná</p></footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Aumentar e diminuir fonte da página -->
+    <script>
+        const btns = document.getElementsByTagName('button');
+        //Muda a fonte do corpo da página para 5px 
+        btns[0].addEventListener('click', () => document.body.style.fontSize = '12px');
+            
+        //Muda a fonte do corpo da página para 16px
+        btns[1].addEventListener('click', () => document.body.style.fontSize = '16px');
+            
+        //Muda a fonte do corpo da página para 35px
+        btns[2].addEventListener('click', () => document.body.style.fontSize = '35px');
+    </script>
+</body>
+</html>

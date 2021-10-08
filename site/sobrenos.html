@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css">
+    <title>Sobre nós</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <label for="toggle-1" class="toggle-menu">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            </label>
+            <input type="checkbox" id="toggle-1">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="página inicio">Inicio</a></li>
+                <li><a href="sobrenos.html" title="página sobre nós">Sobre nós</a></li>
+                <li><a href="refrigerantes.html" titles="página dos refrigerantes">Refrigerantes</a></li>
+                <li><a href="linhadiet.html" title="página da linha diet">Linha Diet</a></li>
+                <li><a href="contato.html" title="página de contato">Contato</a></li>
+            </ul>
+
+            <button title="Diminui tamanho da letra"> A- </button>
+            <button title="Tamanho da letra padrão da página"> A </button>
+            <button title="Aumenta o tamanho da letra"> A+ </button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div><h2 class="titulo">Sobre nós</h2></div>
+            <div class="colunas-sobre">
+                <div class="coluna-sobre"><p>Dolly é uma empresa brasileira e uma marca popular de bebidas. Foi originalmente fundada em 1987  pelo empresário Laerte Codonho, tendo sua principal sede na cidade de Diadema, localizada em São Paulo.</p></div>
+                <div class="coluna-sobre"><p>A companhia tem em sua linha de produção um leque que vai de refrigerantes a refrigerantes diet. Os refrigerantes são os carros-chefes da produção, atendendo a região sudeste do país desde 1987. Seu principal produto é o Guaraná.</p></div>
+                <div class="coluna-sobre"><p>A empresa se tornou nacionalmente conhecida por meio do mascote Dollynho, que passou a representar a empresa e possui uma presença constante nas propagandas promocionais vinculadas na televisão. Desenhado pelo próprio Laerte.</p></div>
+            </div>
+            <div class="colunas-sobre">
+                <div class="coluna-sobre">
+                    <img src="imagens/missão.png" alt="Missão da empresa" title="Missão" >
+                    <h3>Missão</h3>
+                    <p>Conectar a marca com a qualidade dos produtos a um preço justo.</p>
+                </div>
+                <div class="coluna-sobre">
+                    <img src="imagens/visao.png" alt="Visão da empresa" title="Visão">
+                    <h3>Visão</h3>
+                    <p>Valorizar nosso produto no mercado e elevar a visão do público sobre nós.</p>
+                </div>
+                <div class="coluna-sobre">
+                    <img src="imagens/valores.png" alt="Valores da empresa" title="Valores" >
+                    <h3>Valores</h3>
+                    <p>Sempre está conectada com o povo brasileiro, que gosta de festa, gosta de dar risada, gosta de estar em família e entre amigos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><p> © 2021 - COPYRIGHT - Dolly Guaraná</p></footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Aumentar e diminuir fonte da página -->
+    <script>
+    const btns = document.getElementsByTagName('button');
+    //Muda a fonte do corpo da página para 5px 
+    btns[0].addEventListener('click', () => document.body.style.fontSize = '12px');
+        
+    //Muda a fonte do corpo da página para 16px
+    btns[1].addEventListener('click', () => document.body.style.fontSize = '16px');
+        
+    //Muda a fonte do corpo da página para 35px
+    btns[2].addEventListener('click', () => document.body.style.fontSize = '35px');
+    </script>
+</body>
+</html>

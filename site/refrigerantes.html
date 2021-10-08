@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css">
+    <title>Refrigerantes</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <label for="toggle-1" class="toggle-menu">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            </label>
+            <input type="checkbox" id="toggle-1">
+        <nav>
+
+            <ul>
+                <li><a href="index.html" title="página inicio">Inicio</a></li>
+                <li><a href="sobrenos.html" title="página sobre nós">Sobre nós</a></li>
+                <li><a href="refrigerantes.html" titles="página dos refrigerantes">Refrigerantes</a></li>
+                <li><a href="linhadiet.html" title="página da linha diet">Linha Diet</a></li>
+                <li><a href="contato.html" title="página de contato">Contato</a></li>
+            </ul>
+
+            <button title="Diminui tamanho da letra"> A- </button>
+            <button title="Tamanho da letra padrão da página"> A </button>
+            <button title="Aumenta o tamanho da letra"> A+ </button>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="background-refrigerantes">
+            <div><h2 class="titulo">Refrigerantes</h2></div>
+            <div class="titulo-sub"><p>Os refrigerantes Dolly Guaraná passam por rigorosos controles de qualidade<br> que asseguram seus deliciosos sabores.</p></div>
+            <div class="colunas-refrigerantes" >
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-uva.png" alt="Refrigerante de Uva" title="Uva">
+                    <h3>Uva</h3>
+                    <p>Refrigerante produzido com com suco concentrado e clarificado de uva, aroma e aditivos como conservantes e acidulantes. </p>
+                </div>
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-citrus.png" alt="Refrigerante de Citrus" title="Citrus" >
+                    <h3>Citrus</h3>
+                    <p>Refrigerante com sucos e aromas nos sabores Limão, Grapefruit, Maçã e Laranja. </p>
+                </div>
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-cola.png" alt="Refrigerante de Cola" title="Cola">
+                    <h3>Cola</h3>
+                    <p>Refrigerante produzido a partir de concentrado natural de cola, com aromas e extrato de noz de cola. </p>
+                </div>
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-guaraná.png" alt="Refrigerante de Guaraná" title="Guaraná">
+                    <h3>Guaraná</h3>
+                    <p>Refrigerante produzido com extrato, aromas naturais de Guaraná e aditivos como conservantes e acidulantes.</p>
+                </div>
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-laranja.png" alt="Refrigerante de Laranja" title="Laranja" >
+                    <h3>Laranja</h3>
+                    <p>Refrigerante produzido com suco concentrado  de laranja, aroma natural de laranja, aditivos como conservantes e acidulantes. A quantidade de vitamina C no suco de laranja é de 45 à 3mg/100ml.</p>
+                </div>
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-limão.png" alt="Refrigerante de Limão" title="Limão">
+                    <h3>Limão</h3>
+                    <p>Refrigerante produzido com suco concentrado e clarificado de limão, aroma natural de limão e aditivos como conservantes e acidulantes. A quantidade de vitamina C no suco de limão, varia de 22 à 29mg/100ml</p>
+                </div>
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-maçã.png" alt="Refrigerante de Maçã" title="Maçã" >
+                    <h3>Maçã</h3>
+                    <p>Refrigerante produzido com com suco concentrado e clarificado de maçã, aroma e aditivos como conservantes e acidulantes.</p>
+                </div>
+                <div class="coluna-refrigerantes">
+                    <img src="imagens/refrigerante-maracujá.png" alt="Refrigerante de Maracujá" title="Maracujá" >
+                    <h3>Maracujá</h3>
+                    <p>Refrigerante produzido com com suco concentrado e clarificado de maracujá, aroma e aditivos como conservantes e acidulantes. </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><p> © 2021 - COPYRIGHT - Dolly Guaraná</p></footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Aumentar e diminuir fonte da página -->
+    <script>
+        const btns = document.getElementsByTagName('button');
+        //Muda a fonte do corpo da página para 5px 
+        btns[0].addEventListener('click', () => document.body.style.fontSize = '12px');
+            
+        //Muda a fonte do corpo da página para 16px
+        btns[1].addEventListener('click', () => document.body.style.fontSize = '16px');
+            
+        //Muda a fonte do corpo da página para 35px
+        btns[2].addEventListener('click', () => document.body.style.fontSize = '35px');
+    </script>
+</body>
+</html>

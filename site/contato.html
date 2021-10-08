@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <label for="toggle-1" class="toggle-menu">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            </label>
+            <input type="checkbox" id="toggle-1">
+        <nav>
+
+            <ul>
+                <li><a href="index.html" title="página inicio">Inicio</a></li>
+                <li><a href="sobrenos.html" title="página sobre nós">Sobre nós</a></li>
+                <li><a href="refrigerantes.html" titles="página dos refrigerantes">Refrigerantes</a></li>
+                <li><a href="linhadiet.html" title="página da linha diet">Linha Diet</a></li>
+                <li><a href="contato.html" title="página de contato">Contato</a></li>
+            </ul>
+
+            <button title="Diminui tamanho da letra"> A- </button>
+            <button title="Tamanho da letra padrão da página"> A </button>
+            <button title="Aumenta o tamanho da letra"> A+ </button>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="background-contato">
+            <div><h2 class="titulo">Contato</h2></div>
+            <div class="titulo-sub"><p>Como todos os produtos da linha Diet Dolly passa por rigorosos <br> controles de qualidade que asseguram o seu delicioso sabor.</p></div>
+            <div class="colunas-contato">
+                <div class="coluna-contato">
+                    <form  action="http://hub.fatecrl.edu.br/sobrino/recebe.php" method="POST" autocomplete="off">
+                        <p>
+                            <label for="nome" class="campo">Prerencha com seu nome:</label><br>
+                            <input class="entrada" type="text" name="nome" id="nome" maxlength="40" placeholder="Digite seu nome" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="seu nome" required="required" autofocus >
+                        </p>
+                        <p>
+                            <label for="email" class="campo">Preencha com seu e-mail:</label><br>
+                            <input class="entrada" type="email" name="email" id="email" maxlength="40" placeholder="Digite seu e-mmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="seu@email.com" required="required" autofocus >
+                        </p>
+                        <p>
+                            <label for="msg" class="campo">Preencha com sua mensagem:</label><br>
+                            <textarea class="entrada" type="text" name="msg" id="msg" maxlength="60" placeholder="Escreva sua mensagem" title="sua mensagem" required="required" autofocus></textarea>
+                        </p>
+                        <br>
+                        <p class="confirmar">
+                            <input type="submit" name="confirmar" value="Confirmar" title="Confirmar envio do formulário" />
+                        </p>
+                    </form>
+                </div>
+                <div class="coluna-contato" alt="Contatos da empresa Dolly Guaraná">
+                    <p>Av. Paranapanema, 192 - Parque Reid, Diadema - SP, CEP: 09930-450</p>
+                    <p>contato@dolly.com.br</p>
+                    <p>(11) 3298-8000</p>
+                    <br>
+                    <p> <a href="https://www.facebook.com/DollyRefrigerantesOficial/" target="blank"><img src="imagens/facebook.png" alt="Vai para o Facebook da empresa Dolly Guarná" title="Facebook"></a>
+                        <a href="https://www.instagram.com/dollyrefrigerantes/" target="blank"><img src="imagens/instagram.png" alt="Vai para o Instagram da empresa DollyGuarná" title="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCmYSgeagTjcaeEFoaFGzZyA" target="blank"><img src="imagens/youtube.png" alt="Vai para o canal do YouTube da empresa Dolly Guarná" title="YouTube"></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><p> © 2021 - COPYRIGHT - Dolly Guaraná</p></footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Aumentar e diminuir fonte da página -->
+    <script>
+        const btns = document.getElementsByTagName('button');
+        //Muda a fonte do corpo da página para 5px 
+        btns[0].addEventListener('click', () => document.body.style.fontSize = '12px');
+            
+        //Muda a fonte do corpo da página para 16px
+        btns[1].addEventListener('click', () => document.body.style.fontSize = '16px');
+            
+        //Muda a fonte do corpo da página para 35px
+        btns[2].addEventListener('click', () => document.body.style.fontSize = '35px');
+    </script>
+</body>
+</html>
