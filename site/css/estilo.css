@@ -3,7 +3,7 @@ body, ul, li, p{
     margin:0px;
     padding:0px;
     list-style-type:none;
-    font-size: 1.2rem;
+    font-size: 112.5%;
     font-family:Poppins, sans-serif;
 }
 a{
@@ -54,7 +54,7 @@ nav ul li:last-child { padding-right: 0px; }
   
 nav ul li a {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 112.5%;
     padding: 25px 20px;
     display: inline-block;
     transition: all 0.5s ease 0s;
@@ -89,18 +89,20 @@ footer{
     color:white;
     padding:20px;
  }
-
+ caption{
+   margin-bottom: 10px;
+ }
 table.tbfooter {
     text-align: left;
     width: 100%;
-    font-size: 0.90rem;
+    font-size: 87.5%;
     font-family:Poppins, sans-serif;
   }
 
  /* Titulos e sub titulos das páginas */
  .titulo {
     text-align: center;
-    font-size: 3rem;
+    font-size: 300%;
     font-weight: 700;
     margin: 0px;
  }
@@ -248,7 +250,7 @@ table.tbfooter {
 
 /*FORMULÃRIO */
 form{
-    font-size: 16px;
+    font-size: 100%;
     max-width: 300px; /*tamanho mÃ¡ximo do form*/
     margin: 0 auto; /*centraliza o form*/
     padding: 10px 20px 20px 20px;
@@ -262,7 +264,7 @@ form{
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   }
   input, textarea {
-    font-size: 16px;
+    font-size: 100%;
     margin: 5px;
   }
   
@@ -303,32 +305,32 @@ form{
 
   /* Aqui define o tamanho base, não precisa ser em px */
   body {
-    font-size: 16px;
+    font-size: 100%;
   }
   
   /* Os botões ficaram do mesmo tamanho independentemente do tamanho */
   button {
-    font-size: 14px;
+    font-size: 87.5%;
   }
   
   /* Os outros vão aumentar/diminuir proporcionalmente */
   h2 {
-    font-size: 1.5em;
+    font-size: 150%;
   }
   h3 {
-    font-size: 1.5em;
+    font-size: 150%;
   }
   p {
-    font-size: 1em;
+    font-size: 100%;
   }
   span {
-    font-size: 0.5em;
+    font-size: 50%;
   }
   input {
-    font-size: 1em;
+    font-size: 100%;
   }
   .tamanhoLink {
-    font-size: 1em
+    font-size: 100%;
   }
   
 /* CSS Responsivo */
@@ -378,7 +380,7 @@ form{
     
     nav ul li a {
       color: #FFF;
-      font-size: 15px;
+      font-size: 93.8%;
       padding: 10px 20px;
       display: block;
       border-bottom: 1px solid rgba(225,225,225,0.1);

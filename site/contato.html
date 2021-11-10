@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <h1 alt="logotipo da empresa refrigerantes Dolly, representado pelo guaraná que é uma fruta típica da Amazônia, encontrada no Brasil e Venezuela. É pequena e vermelha" title="Logo Dolly - representado pela fruta guaraná">Logo</h1>
+        <h1 title="Logo Dolly - representado pela fruta guaraná">Logo</h1>
+
         <label for="toggle-1" class="toggle-menu">
             <ul>
               <li></li>
@@ -31,6 +32,7 @@
             <button title="Diminui tamanho da letra"> A- </button>
             <button title="Tamanho da letra padrão da página"> A </button>
             <button title="Aumenta o tamanho da letra"> A+ </button>
+            <a href="#titulo" title="Vai para o início do contéudo da página">área do conteúdo principal</a>
             
         </nav>
     </header>
@@ -52,19 +54,19 @@
                         </p>
                         <p>
                             <label for="email" class="campo">Preencha com seu e-mail: *</label><br>
-                            <input class="entrada" type="email" name="email" id="email" maxlength="40" placeholder="Digite seu e-mail"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="seu@email.com" required="required" autofocus aria-required="true" autocomplete="on">
+                            <input class="entrada" type="email" name="email" id="email" maxlength="40" placeholder="Digite seu e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="seu@email.com" required="required" autofocus aria-required="true" autocomplete="on">
                         </p>
                         <p>
                             <label for="msg" class="campo">Preencha com sua mensagem: *</label><br>
-                            <textarea class="entrada" type="text" name="msg" id="msg" maxlength="60" placeholder="Escreva sua mensagem" title="sua mensagem" required="required" autofocus aria-required="true" autocomplete="on"></textarea>
+                            <textarea class="entrada" name="msg" id="msg" maxlength="60" placeholder="Escreva sua mensagem" title="sua mensagem" required="required" aria-required="true" autocomplete="on"></textarea>
                         </p>
                         <br>
                         <p class="confirmar">
-                            <input type="submit" name="confirmar" value="Confirmar" alt="botão para o envio do formulário" title="Confirmar envio do formulário" />
+                            <input type="submit" name="confirmar" value="Confirmar"  title="Confirmar envio do formulário" />
                         </p>
                     </form>
                 </div>
-                <div class="coluna-contato" alt="Contatos da empresa Dolly Guaraná">
+                <div class="coluna-contato">
                     <p>Av. Paranapanema, 192 - Parque Reid, Diadema - SP, CEP: 09930-450</p>
                     <p>contato@dolly.com.br</p>
                     <p>(11) 3298-8000</p>
@@ -78,7 +80,8 @@
         </section>
     </main>
     <footer>
-        <table class="tbfooter" summary="Rodapé do site com informações da empresa, suas redes sociais e menu do site">
+        <table class="tbfooter">
+            <caption>informações da empresa, suas redes sociais e menu do site</caption>
             <thead>
                 <tr>
                     <th id="i" scope="col" abbr="Empresa">Informações da empresa</th>
