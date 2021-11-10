@@ -344,7 +344,7 @@ form{
       background: none;
     }
     
-    input[type=checkbox]:fous {
+    input[type=checkbox]:focus {
       background:none;
     }
     
